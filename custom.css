@@ -1,0 +1,442 @@
+/* Import Fonts */
+@font-face {
+    font-family: 'Sequel Sans Heavy Disp';
+    src: url('fonts/sequel-sans-heavy-disp.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sequel Sans Semi Bald';
+    src: url('fonts/sequel-sans-semi-bald.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url('fonts/gilroy-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy Semibold';
+    src: url('fonts/gilroy-semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Codec Pro Regular';
+    src: url('fonts/codec-pro.regular.ttf') format('truetype');
+}
+
+/* Global Settings */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+#list-metace-menu .nav-item {
+    margin-right: 2em;
+}
+
+#list-metace-menu .nav-item:last-child {
+    margin: 0;
+}
+
+#list-metace-menu .nav-link {
+    font-family: 'Sequel Sans Semi Bald', sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+    #list-metace-menu .nav-item {
+        margin-right: 3em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #list-metace-menu .nav-item {
+        margin-right: 4em;
+    }
+}
+
+/* Cover */
+
+@media screen and (min-width: 1400px) {
+    #row-ethereum {
+        justify-content: space-around;
+    }
+}
+
+/* Headings */
+#column-ethereum-2 .h1-style,
+.we-section-title,
+#our-services-label,
+#meet-our-team-text,
+#advisers-label,
+#involved-text {
+    font-family: 'Sequel Sans Heavy Disp', sans-serif;
+}
+
+@media screen and (min-width: 576px) and (max-width:768px) {
+    #column-ethereum-2 {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #our-services-label {
+        font-size: 36px;
+    }
+}
+
+#involved-text {
+    color: #ffffff;
+}
+
+/* Anouncements */
+#text-anons,
+#button-anons-learn-more {
+    font-family: 'Gilroy Light', sans-serif;
+}
+
+/* Social Media Links */
+#social-media-1-text,
+#social-media-2-text,
+#social-media-3-text,
+.footer-link {
+    font-family: 'Gilroy Light', sans-serif;
+}
+
+/* Team Frames */
+#ceo-name,
+#cpo-name,
+#cco-name,
+#cmo-name,
+#cto-name,
+#adviser-1-name,
+#adviser-2-name,
+#adviser-3-name {
+    font-family: 'Gilroy Light', sans-serif;
+}
+
+#ceo-text,
+#cpo-text,
+#cto-text,
+#cco-text,
+#cmo-text,
+#adviser-1-work,
+#adviser-2-work,
+#adviser-3-work {
+    font-family: 'Gilroy Semibold', sans-serif;
+    color: #a688f8;
+}
+
+/* Buttons */
+#button-anons-learn-more {
+    font-family: 'Sequel Sans Semi Bald', sans-serif;
+}
+
+/* About Texts */
+#we-empower-label,
+#we-innovate-text,
+#revolutionize-text,
+#-your-business,
+#connect-text {
+    font-family: 'Codec Pro Regular', sans-serif;
+}
+
+#propel-your-business {
+    color: #a688f8;
+    font-family: 'Codec Pro Regular', sans-serif;
+}
+
+@media (min-width: 992px) {
+    .bloc-container {
+        padding: 0 15%;
+    }
+
+    .announcement-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .bloc-container {
+        padding: 0 10%;
+    }
+
+    .announcement-text {
+        text-align: center;
+    }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.announcement-text {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#button-anons-learn-more {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+
+    #main-image,
+    #column-ethereum-1 {
+        display: none;
+    }
+
+    #container-metace-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #logo-metace {
+        display: inline-block;
+    }
+
+    #about .col-sm-4 {
+        order: 2;
+    }
+
+    #about .col-sm-8 {
+        order: 1;
+    }
+
+    #bloc-ethereum .h1-style {
+        line-height: 1;
+    }
+
+    #propel-your-business,
+    #text-anons {
+        font-size: 16px;
+    }
+
+    #button-anons-learn-more {
+        margin-left: 1px;
+    }
+
+    #logo-metace {
+        margin-left: 20px;
+    }
+
+    #meet-our-team-text {
+        font-size: 40px;
+    }
+
+    #involved-text {
+        font-size: 30px;
+    }
+
+    #bloc-about {
+        position: static;
+    }
+}
+
+.services-label {
+    text-align: center;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#custom-button {
+    display: inline-block;
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 20px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: black;
+    background-color: #b1c1c9;
+    text-decoration: none;
+}
+
+.list-style {
+    list-style-type: none;
+    /* Removes the bullets */
+}
+
+
+/* FAQ Section Styling */
+#faq {
+    background-color: black;
+    /* FAQ section background */
+    font-family: 'Gilroy Semibold', sans-serif;
+    /* Setting the font for the entire section */
+}
+
+.faq-section h2 {
+    color: white;
+    /* Heading color */
+    font-family: 'Sequel Sans Heavy Disp', sans-serif;
+
+}
+
+.collapsible {
+    background-color: #444;
+    /* Collapsible button background */
+    color: white;
+    /* Collapsible button text color */
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 15px;
+    /* Rounded corners */
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+    /* Unicode character for minus sign */
+}
+
+.content {
+    padding: 20px 18px;
+    /* Increased padding at the top */
+    background-color: #333;
+    /* Content background */
+    display: none;
+    overflow: hidden;
+    border-radius: 10px;
+    /* Rounded corners for content */
+}
+
+.content p {
+    color: white;
+    /* Text color */
+}
+
+/* Additional Styles for bloc-9 */
+/* Enhanced Styles for Tech Stack in bloc-9 */
+@media screen and (min-width: 768px) {
+    #bloc-9 .card {
+        min-height: 100%;
+        /* Set a fixed height for uniformity */
+    }
+}
+
+
+#bloc-9 .card-header {
+    background-color: #A688F8;
+    /* Header Background Color */
+}
+
+#bloc-9 .card-body {
+    background-color: #1a1d1f;
+    /* Body Background Color */
+    padding: 15px;
+    /* Padding for body content */
+}
+
+#bloc-9 .card-body ul {
+    width: 100%;
+    /* Full width of card body */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    list-style-type: disc;
+    /* Enable bullet points */
+}
+
+#bloc-9 .card-body ul li {
+    margin: 5px;
+    /* Margin around items */
+    font-size: 0.9em;
+    /* Adjust font size */
+    text-align: right;
+    /* Right align text */
+    display: list-item;
+    /* Display as list item */
+    width: 100%;
+    /* Full width for alignment */
+}
+
+#bloc-9 h3 {
+    font-family: 'Codec Pro Regular', sans-serif !important;
+    font-weight: bold;
+}
+
+#bloc-9 p {
+    font-family: 'Codec Pro Regular', sans-serif !important;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.text-tech-stack {
+    color: #3ed7bc !important;
+    /* Blue color */
+    font-family: 'Codec Pro Regular', sans-serif !important;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    #bloc-9 .card-body ul li {
+        /* Keep the styles consistent for smaller screens */
+    }
+}
+
+/* GET IN TOUCH BUTTON */
+
+#bloc-main #get-in-touch-container {
+    margin-top: 20px;
+    /* Add space above the button */
+}
+
+#bloc-main .btn-minimalistic {
+    border: 2px solid #A688F8;
+    /* Primary color border */
+    color: #A688F8;
+    /* Primary color text */
+    background-color: transparent;
+    /* Transparent background */
+    padding: 10px 20px;
+    /* Padding around the text */
+    text-transform: uppercase;
+    /* Uppercase text */
+    font-weight: bold;
+    /* Bold font */
+    font-size: 16px;
+    /* Font size */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+    display: inline-block;
+    /* Ensure the button is displayed */
+    text-decoration: none;
+    /* Remove underline from link */
+}
+
+#bloc-main .btn-minimalistic:hover,
+#bloc-main .btn-minimalistic:focus {
+    background-color: #A688F8;
+    /* Background color on hover/focus */
+    color: white;
+    /* Text color on hover/focus */
+    text-decoration: none;
+    /* Remove underline on hover/focus */
+}
