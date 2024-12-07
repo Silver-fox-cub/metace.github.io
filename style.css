@@ -957,7 +957,19 @@ a {
 }
 
 .advisers-card {
-	min-height: 350px;
+	min-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.advisers-card {
+		min-height: 370px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.advisers-card {
+		min-height: 350px;
+	}
 }
 
 .h5-style {
@@ -1570,4 +1582,13 @@ a {
 	#advisers-label {
 		font-size: 46px;
 	}
+}
+
+.faq-section {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.about-img {
+	margin-top: 20px;
 }
