@@ -1574,8 +1574,10 @@ a {
 	margin: 0 auto;
 }
 
-.about-img {
-	margin-top: 20px;
+@media (max-width: 767px) {
+	.about-img {
+		margin: 20px auto;
+	}
 }
 
 .menu-bloc {
@@ -1584,4 +1586,12 @@ a {
 	opacity: 1;
 	position: relative;
 	display: flex;
+}
+
+@media (max-width: 767px) {
+
+	.we-section-title,
+	.p-style {
+		text-align: center;
+	}
 }
