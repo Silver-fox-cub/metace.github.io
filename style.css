@@ -82,7 +82,7 @@ a:hover {
 .bloc {
 	width: 100%;
 	clear: both;
-	background: 50% 50% no-repeat;
+	/* background: 50% 50% no-repeat; */
 	padding: 0 20px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -210,10 +210,31 @@ a:hover {
 } */
 
 .parallax {
-	background-image: url(img/background.webp);
+	background-image: url(img/background-sm.webp);
 	background-attachment: fixed;
+	width: 100%;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 100%;
+}
+
+@media (min-width: 768px) {
+	.parallax {
+		background-image: url(img/background-md.webp);
+	}
+}
+
+@media (min-width: 992px) {
+	.parallax {
+		background-image: url(img/background-lg.webp);
+	}
+}
+
+@media (min-width: 1200px) {
+	.parallax {
+		background-image: url(img/background-xxl.webp);
+	}
 }
 
 /* Dark theme */
@@ -1273,14 +1294,14 @@ a {
 
 /* Bloc image backgrounds */
 
-.parallax-img {
+/* .parallax-img {
 	background-image: url("img/background.webp");
 	background-image: -webkit-image-set(url("img/background.webp") 1x,
 			url("img/background.webp") 2x);
 	background-image: image-set(url("img/background.webp") 1x,
 			url("img/background.webp") 2x, url("img/background.webp") 1x,
 			url("img/background.webp") 2x);
-}
+} */
 
 /* .bg-shubham-s-web3-nsBw-gQKldY-unsplash {
 	background-image: url("img/shubham-s-web3-nsBw-gQKldY-unsplash.jpg");
@@ -1612,7 +1633,7 @@ a {
 	width: 100%;
 	background-color: #000;
 	opacity: 1;
-/* 	-webkit-background-size: cover;
+	/* -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover; */
 	/* background-size: cover; */
