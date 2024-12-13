@@ -196,7 +196,7 @@ a:hover {
 	z-index: -1;
 }
 
-.parallax {
+/* .parallax {
 	position: fixed;
 	top: 0;
 	-webkit-transform: translate3d(0, 0, 0);
@@ -206,6 +206,13 @@ a:hover {
 	width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+.parallax {
+	background-image: url(img/background.webp);
+	background-attachment: fixed;
+	background-position: center;
 	background-size: cover;
 }
 
@@ -896,11 +903,11 @@ a {
 	background: linear-gradient(0deg, var(--swatch-var-3726) 0%, var(--swatch-var-5341) 100%);
 }
 
-.sticky.sticky-nav {
+/* .sticky.sticky-nav {
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
 	background-color: rgba(255, 255, 255, 0.30);
-}
+} */
 
 .navbar-brand img {
 	height: 40px;
@@ -1266,7 +1273,7 @@ a {
 
 /* Bloc image backgrounds */
 
-.bg-shubham-s-web3-nsBw-gQKldY-unsplash {
+.parallax-img {
 	background-image: url("img/background.webp");
 	background-image: -webkit-image-set(url("img/background.webp") 1x,
 			url("img/background.webp") 2x);
@@ -1481,9 +1488,9 @@ a {
 		font-size: 20px;
 	}
 
-	.bg-img-box {
+	/* .bg-img-box {
 		height: 250px;
-	}
+	} */
 
 	.overlay-heading {
 		top: 50px;
@@ -1599,4 +1606,16 @@ a {
 
 .about-img {
 	margin-top: 20px;
+}
+
+.menu-bloc {
+	width: 100%;
+	background-color: #000;
+	opacity: 1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/* background-size: cover; */
+	position: relative;
+	display: flex;
 }
