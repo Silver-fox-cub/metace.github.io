@@ -207,7 +207,6 @@ a:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* height: 66px; */
 }
 
 /* Dark theme */
@@ -1268,14 +1267,22 @@ a {
 /* Bloc image backgrounds */
 
 .bg-shubham-s-web3-nsBw-gQKldY-unsplash {
+	background-image: url("img/background.webp");
+	background-image: -webkit-image-set(url("img/background.webp") 1x,
+			url("img/background.webp") 2x);
+	background-image: image-set(url("img/background.webp") 1x,
+			url("img/background.webp") 2x, url("img/background.webp") 1x,
+			url("img/background.webp") 2x);
+}
+
+/* .bg-shubham-s-web3-nsBw-gQKldY-unsplash {
 	background-image: url("img/shubham-s-web3-nsBw-gQKldY-unsplash.jpg");
 	background-image: -webkit-image-set(url("img/shubham-s-web3-nsBw-gQKldY-unsplash.webp") 1x,
 			url("img/shubham-s-web3-nsBw-gQKldY-unsplash.webp") 2x);
 	background-image: image-set(url("img/shubham-s-web3-nsBw-gQKldY-unsplash.jpg") 1x,
 			url("img/shubham-s-web3-nsBw-gQKldY-unsplash.jpg") 2x, url("img/shubham-s-web3-nsBw-gQKldY-unsplash.webp") 1x,
 			url("img/shubham-s-web3-nsBw-gQKldY-unsplash.webp") 2x);
-}
-
+} */
 
 
 /* = Bloc Padding Multi Breakpoint
@@ -1446,9 +1453,10 @@ a {
 		margin-bottom: 10px;
 	}
 
+	/* 
 	.bg-img-box {
 		height: 350px;
-	}
+	} */
 
 	.bento-box {
 		padding: 30px 30px 30px 30px;
